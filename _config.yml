@@ -19,7 +19,8 @@ email: "camonti@ncsu.edu"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 #theme: "minima"
-remote_theme: pages-themes/dinky@v0.2.0 # added last update
+#remote_theme: pages-themes/dinky@v0.2.0 # added last update
+remote_theme: pages-themes/cayman@v0.2.0
 
 rss: rss
 
