@@ -633,18 +633,18 @@ df
 ```
 
     ## # A tibble: 876 × 14
-    ##    ticker name  market type  compo…¹ share…² Tradi…³ Volum…⁴ Open_…⁵ Closi…⁶ Highe…⁷
-    ##    <chr>  <chr> <chr>  <chr> <chr>   <chr>     <dbl>   <dbl>   <dbl>   <dbl>   <dbl>
-    ##  1 CNTMF  CANS… otc    OS    BBG00N… BBG00N…  107611 1.85e-1 1.85e-1 1.85e-1 1.88e-1
-    ##  2 OODH   ORIO… otc    CS    BBG003… BBG003…  204375 3.82e-2 4.3 e-2 3.6 e-2 4.3 e-2
-    ##  3 HEOFF  H2O … otc    OS    BBG000… BBG001…    2752 1.52e+0 1.54e+0 1.52e+0 1.54e+0
-    ##  4 BNVIF  BINO… otc    OS    BBG002… BBG002…    1042 6.24e-2 6.49e-2 6   e-2 6.49e-2
-    ##  5 BDWBY  BUDW… otc    ADRC  BBG00Q… BBG00Q…     597 1.15e+1 1.16e+1 1.16e+1 1.16e+1
-    ##  6 HKMPY  HIKM… otc    ADRC  BBG000… BBG001…    1350 4.22e+1 4.30e+1 4.17e+1 4.33e+1
-    ##  7 NHMD   NATE… otc    CS    BBG000… BBG001… 1223667 1.47e-3 1.4 e-3 1.5 e-3 1.5 e-3
-    ##  8 HSNGY  HANG… otc    ADRC  BBG000… BBG001…   41438 1.63e+1 1.63e+1 1.64e+1 1.64e+1
-    ##  9 PDER   PARD… otc    CS    BBG000… BBG001…     140 2.58e+2 2.58e+2 2.58e+2 2.58e+2
-    ## 10 YAMHY  YAMA… otc    ADRC  BBG000… BBG001…     691 9.61e+0 9.61e+0 9.46e+0 9.72e+0
+    ##    ticker name       market type  compo…¹ share…² Tradi…³ Volum…⁴ Open_…⁵ Closi…⁶ Highe…⁷
+    ##    <chr>  <chr>      <chr>  <chr> <chr>   <chr>     <dbl>   <dbl>   <dbl>   <dbl>   <dbl>
+    ##  1 CNTMF  CANSORTIU… otc    OS    BBG00N… BBG00N…  107611 1.85e-1 1.85e-1 1.85e-1 1.88e-1
+    ##  2 OODH   ORION DIV… otc    CS    BBG003… BBG003…  204375 3.82e-2 4.3 e-2 3.6 e-2 4.3 e-2
+    ##  3 HEOFF  H2O INNOV… otc    OS    BBG000… BBG001…    2752 1.52e+0 1.54e+0 1.52e+0 1.54e+0
+    ##  4 BNVIF  BINOVI TE… otc    OS    BBG002… BBG002…    1042 6.24e-2 6.49e-2 6   e-2 6.49e-2
+    ##  5 BDWBY  BUDWEISER… otc    ADRC  BBG00Q… BBG00Q…     597 1.15e+1 1.16e+1 1.16e+1 1.16e+1
+    ##  6 HKMPY  HIKMA PHA… otc    ADRC  BBG000… BBG001…    1350 4.22e+1 4.30e+1 4.17e+1 4.33e+1
+    ##  7 NHMD   NATE'S FO… otc    CS    BBG000… BBG001… 1223667 1.47e-3 1.4 e-3 1.5 e-3 1.5 e-3
+    ##  8 HSNGY  HANG SENG… otc    ADRC  BBG000… BBG001…   41438 1.63e+1 1.63e+1 1.64e+1 1.64e+1
+    ##  9 PDER   PARDEE RE… otc    CS    BBG000… BBG001…     140 2.58e+2 2.58e+2 2.58e+2 2.58e+2
+    ## 10 YAMHY  YAMAHA MO… otc    ADRC  BBG000… BBG001…     691 9.61e+0 9.61e+0 9.46e+0 9.72e+0
     ## # … with 866 more rows, 3 more variables: Lowest_price <dbl>, Unix_time <dbl>,
     ## #   Transactions <int>, and abbreviated variable names ¹​composite_figi,
     ## #   ²​share_class_figi, ³​Trading_volume, ⁴​Volume_wt_avg_price, ⁵​Open_price,
@@ -656,21 +656,21 @@ time_df
 ```
 
     ## # A tibble: 65 × 11
-    ##    Compan…¹ tckr  Date       Tradi…² Volum…³ Open_…⁴ Closi…⁵ Highe…⁶ Lowes…⁷ Unix_…⁸
-    ##    <chr>    <chr> <date>       <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>
-    ##  1 Apple I… AAPL  2021-07-22  1.58e9    147.    146.    148.    152.    143. 1.63e12
-    ##  2 Apple I… AAPL  2021-08-22  1.51e9    151.    148.    146.    157.    146. 1.63e12
-    ##  3 Apple I… AAPL  2021-09-22  1.73e9    143.    144.    149.    149.    138. 1.63e12
-    ##  4 Apple I… AAPL  2021-10-22  1.52e9    151.    149.    158.    159.    146. 1.63e12
-    ##  5 Apple I… AAPL  2021-11-22  2.48e9    169.    158.    171.    182.    156. 1.64e12
-    ##  6 Apple I… AAPL  2021-12-22  1.60e9    175.    168.    173.    183.    167. 1.64e12
-    ##  7 Apple I… AAPL  2022-01-22  2.17e9    168.    172.    173.    177.    155. 1.64e12
-    ##  8 Apple I… AAPL  2022-02-22  2.01e9    161.    171.    164.    172.    150. 1.65e12
-    ##  9 Apple I… AAPL  2022-03-22  1.60e9    172.    164.    165.    180.    163. 1.65e12
-    ## 10 Apple I… AAPL  2022-04-22  2.34e9    156.    164.    149.    172.    139. 1.65e12
-    ## # … with 55 more rows, 1 more variable: Transactions <int>, and abbreviated
-    ## #   variable names ¹​Company_Name, ²​Trading_volume, ³​Volume_wt_avg_price,
-    ## #   ⁴​Open_price, ⁵​Closing_price, ⁶​Highest_price, ⁷​Lowest_price, ⁸​Unix_time
+    ##    Company_Name tckr  Date       Tradin…¹ Volum…² Open_…³ Closi…⁴ Highe…⁵ Lowes…⁶ Unix_…⁷
+    ##    <chr>        <chr> <date>        <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>
+    ##  1 Apple Inc.   AAPL  2021-07-22   1.58e9    147.    146.    148.    152.    143. 1.63e12
+    ##  2 Apple Inc.   AAPL  2021-08-22   1.51e9    151.    148.    146.    157.    146. 1.63e12
+    ##  3 Apple Inc.   AAPL  2021-09-22   1.73e9    143.    144.    149.    149.    138. 1.63e12
+    ##  4 Apple Inc.   AAPL  2021-10-22   1.52e9    151.    149.    158.    159.    146. 1.63e12
+    ##  5 Apple Inc.   AAPL  2021-11-22   2.48e9    169.    158.    171.    182.    156. 1.64e12
+    ##  6 Apple Inc.   AAPL  2021-12-22   1.60e9    175.    168.    173.    183.    167. 1.64e12
+    ##  7 Apple Inc.   AAPL  2022-01-22   2.17e9    168.    172.    173.    177.    155. 1.64e12
+    ##  8 Apple Inc.   AAPL  2022-02-22   2.01e9    161.    171.    164.    172.    150. 1.65e12
+    ##  9 Apple Inc.   AAPL  2022-03-22   1.60e9    172.    164.    165.    180.    163. 1.65e12
+    ## 10 Apple Inc.   AAPL  2022-04-22   2.34e9    156.    164.    149.    172.    139. 1.65e12
+    ## # … with 55 more rows, 1 more variable: Transactions <int>, and abbreviated variable
+    ## #   names ¹​Trading_volume, ²​Volume_wt_avg_price, ³​Open_price, ⁴​Closing_price,
+    ## #   ⁵​Highest_price, ⁶​Lowest_price, ⁷​Unix_time
 
 ``` r
 macd_df = out$macd_df
@@ -840,8 +840,8 @@ kable(table(output$df$market), col.names = c("Market Type","Frequency"))
 
 | Market Type | Frequency |
 |:------------|----------:|
-| otc         |       190 |
-| stocks      |       686 |
+| otc         |       191 |
+| stocks      |       685 |
 
 ``` r
 kable(table(output$df$type), col.names = c("Ticker Type","Frequency"))
@@ -849,13 +849,13 @@ kable(table(output$df$type), col.names = c("Ticker Type","Frequency"))
 
 | Ticker Type | Frequency |
 |:------------|----------:|
-| ADRC        |        76 |
-| CS          |       464 |
-| ETF         |       207 |
-| ETN         |         7 |
-| ETV         |         3 |
+| ADRC        |        71 |
+| CS          |       461 |
+| ETF         |       214 |
+| ETN         |         6 |
+| ETV         |         4 |
 | FUND        |        36 |
-| OS          |        70 |
+| OS          |        71 |
 | UNIT        |        13 |
 
 ``` r
@@ -864,8 +864,8 @@ kable(table(output$df$market, output$df$type), caption = "Contingency Table of M
 
 |        | ADRC |  CS | ETF | ETN | ETV | FUND |  OS | UNIT |
 |:-------|-----:|----:|----:|----:|----:|-----:|----:|-----:|
-| otc    |   44 |  74 |   0 |   0 |   0 |    0 |  70 |    2 |
-| stocks |   32 | 390 | 207 |   7 |   3 |   36 |   0 |   11 |
+| otc    |   44 |  74 |   0 |   0 |   0 |    0 |  71 |    2 |
+| stocks |   27 | 387 | 214 |   6 |   4 |   36 |   0 |   11 |
 
 Contingency Table of Market Type by Ticker Type
 
@@ -895,14 +895,14 @@ kable(output$tab_cate2, caption = "Average of Price Derived Variables by Market 
 |:-------|:-----|---------------:|--------------------:|-----------:|--------------:|--------------:|-------------:|-------------:|------------------:|
 | otc    | ADRC |     104332.227 |           25.319275 |  25.456620 |     25.221296 |     25.595718 |    25.101807 |    176.97727 |         25.306273 |
 | otc    | CS   |   23779311.378 |            4.738820 |   4.740364 |      4.732953 |      4.751451 |     4.721854 |    181.68919 |          4.735419 |
-| otc    | OS   |      31769.329 |            1.775972 |   1.785386 |      1.753709 |      1.801946 |     1.740986 |     12.71429 |          1.765547 |
+| otc    | OS   |      31526.648 |            1.919502 |   1.936014 |      1.894642 |      1.952595 |     1.881958 |     13.38028 |          1.909732 |
 | otc    | UNIT |      12464.000 |            5.972900 |   6.000000 |      5.974000 |      6.010000 |     5.954000 |     23.50000 |          5.979333 |
-| stocks | ADRC |    2322177.250 |           20.620218 |  20.807041 |     20.494503 |     21.048881 |    20.333469 |   8742.06250 |         20.625618 |
-| stocks | CS   |    1327836.681 |           41.889266 |  42.248138 |     41.827770 |     42.784632 |    41.313961 |  11236.38205 |         41.975454 |
-| stocks | ETF  |     810798.237 |           42.984732 |  43.185112 |     42.877360 |     43.357166 |    42.663893 |   3035.98551 |         42.966140 |
-| stocks | ETN  |      14929.429 |           30.489357 |  30.303643 |     30.303343 |     30.905043 |    30.007486 |    127.28571 |         30.405290 |
-| stocks | ETV  |    1834717.000 |           24.908033 |  24.805433 |     24.845600 |     25.055533 |    24.742567 |   3794.00000 |         24.881233 |
-| stocks | FUND |      73518.222 |           12.517689 |  12.560278 |     12.491806 |     12.643128 |    12.424547 |    345.58333 |         12.519827 |
+| stocks | ADRC |    1873471.185 |           19.575691 |  19.783718 |     19.435707 |     20.023974 |    19.282489 |   5768.55556 |         19.580724 |
+| stocks | CS   |    1265474.555 |           43.831180 |  44.213204 |     43.766795 |     44.763554 |    43.235039 |  11084.11628 |         43.921796 |
+| stocks | ETF  |     401799.187 |           44.098362 |  44.326908 |     43.992589 |     44.474905 |    43.760971 |   2065.90654 |         44.076155 |
+| stocks | ETN  |     143803.667 |           28.737317 |  28.710917 |     28.532617 |     29.179700 |    28.351700 |    297.66667 |         28.688006 |
+| stocks | ETV  |    6149569.250 |           35.208000 |  35.249425 |     34.971700 |     35.547500 |    34.839400 |   6021.25000 |         35.119533 |
+| stocks | FUND |      73302.333 |           12.690031 |  12.732778 |     12.663472 |     12.815350 |    12.596769 |    347.30556 |         12.691864 |
 | stocks | UNIT |       3259.364 |            9.938882 |   9.944546 |      9.931364 |      9.946818 |     9.929091 |     12.63636 |          9.935758 |
 
 Average of Price Derived Variables by Market and Ticker Types
@@ -990,7 +990,7 @@ in mind that the investor seeks more gains.
 Additionally, the linear relationship indicates that the typical price
 is can be represented by the highest price or vice versa. This indicates
 high correlation between them. In fact, the correlation between them is
-0.9998385, which is strong positive correlation for all data set.
+0.9998769, which is strong positive correlation for all data set.
 
 ``` r
 # scatter plot by market and ticker type
